@@ -1,3 +1,29 @@
+"""
+Int-Bin-Hex Converter v1
+Author: Luke Wait
+Date: 25.07.23
+
+This script is a simple integer-binary-hexadecimal converter application
+built using PyQt5. It provides a graphical user interface (GUI) that allows
+users to convert numbers between integer, binary, and hexadecimal formats.
+
+Usage:
+- Enter a numerical value in the input field.
+- Select the desired output format (Integer, Binary, or Hexadecimal) from the combo box.
+- Press the "Convert" button or press the Enter key to perform the conversion.
+- The converted values will be displayed in the respective output fields.
+
+Dependencies:
+- PyQt5
+
+Version History:
+- v1 (25.07.23): Initial version with basic functionality.
+
+GitHub Repository: https://github.com/your_username/your_project
+
+For more information, contact the author at luke.wait@example.com.
+"""
+
 import sys
 from PyQt5 import QtWidgets, QtGui
 from PyQt5.QtWidgets import QMessageBox
