@@ -20,8 +20,6 @@ Version History:
 - v1 (25.07.23): Initial version with basic functionality.
 
 GitHub Repository: https://github.com/LukeWait/Int-Bin-Hex_Converter
-
-For more information, contact the author at luke.wait@example.com.
 """
 
 import sys
