@@ -1,25 +1,18 @@
+# -*- coding: utf-8 -*-
 """
-Int-Bin-Hex Converter v1
+Project: GUI Base Converter Tool
+Description: A Python-based tool for converting numbers between different bases with a PyQt GUI.
+             This tool supports conversion between integers, binary, and hexadecimal formats.
+Version: 1.0.0
 Author: Luke Wait
-Date: 25.07.23
+Date: July 25, 2023
+License: MIT License
 
-This script is a simple integer-binary-hexadecimal converter application
-built using PyQt5. It provides a graphical user interface (GUI) that allows
-users to convert numbers between integer, binary, and hexadecimal formats.
+Dependencies (requirements.txt):
+PyQt5==5.15.6
+pyqt5-tools==5.15.4.3.2
 
-Usage:
-- Enter a numerical value in the input field.
-- Select the desired output format (Integer, Binary, or Hexadecimal) from the combo box.
-- Press the "Convert" button or press the Enter key to perform the conversion.
-- The converted values will be displayed in the respective output fields.
-
-Dependencies:
-- PyQt5
-
-Version History:
-- v1 (25.07.23): Initial version with basic functionality.
-
-GitHub Repository: https://github.com/LukeWait/Int-Bin-Hex_Converter
+GitHub Repository: https://github.com/LukeWait/base-converter
 """
 
 import sys
