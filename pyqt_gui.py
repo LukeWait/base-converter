@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'binhexcalc.ui'
+# Form implementation generated from reading ui file 'pyqt_gui.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
@@ -68,7 +68,7 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "Binary & Hexadecimal Converter"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Base Converter Tool"))
         self.label.setText(_translate("MainWindow", "Input:"))
         self.label_2.setText(_translate("MainWindow", "Type:"))
         self.convertButton.setText(_translate("MainWindow", "Convert"))
