@@ -1,17 +1,112 @@
-# Int-Bin-Hex_Converter
-Application to convert integer <-> binary <-> hexadecimal
+# Base Converter Tool
 
-Use the input field to enter either int, bin, or hex number and choose appropriate type from combo box.
-Upon clicking convert, the number will be displayed as all three options in the labelled output areas.
+## Description
+A Python-based GUI tool for converting numbers between different bases.
 
-User can enter multiple numbers by using a "." as a separator. For example, an IP address entered as an 
-integer: 192.168.1.1, will be displayed as binary: 11000000.10101000.1.1, and hex: C0.A8.1.1
+<p align="center">
+  <img src="https://github.com/LukeWait/base-converter/raw/main/assets/screenshots/base-converter-preview.png" alt="App Screenshot" width="550">
+</p>
 
-Installs:
-pip install pyinstaller
-pip install PyQt5
-pip install PyQt5 pyqt5-tools
+## Table of Contents
+- [Installation](#installation)
+- [Usage](#usage)
+- [Development](#development)
+- [License](#license)
+- [Source Code](#source-code)
+- [Dependencies](#dependencies)
 
-pyqt_gui.ui can be opened with PyQt5 designer.exe
-pyqt_gui.py can be converted to .py using -> pyuic5 -o pyqt_gui.py pyqt_gui.ui
-executable can be built for win/mac/unix with pyinstaller -> pyinstaller --onefile --noconsole int-bin-hex.py
+## Installation
+
+### Executable
+#### Windows
+1. Download the `base_converter_win_v1_0_0.zip` from the [releases page](https://github.com/LukeWait/base-converter/releases).
+2. Extract the contents to a desired location.
+3. Run the `BaseConverter.exe` file.
+
+#### Linux
+Due to size constraints, a Linux executable is not included in the releases. Please follow the instructions below to run the application from source.
+
+### From Source
+To install and run the application from source:
+
+1. Clone the repository:
+    ```sh
+    git clone https://github.com/LukeWait/base-converter.git
+    cd base-converter
+    ```
+
+2. (Optional) Create and activate a virtual environment:
+    - **Windows**:
+      ```sh
+      python -m venv base_converter_venv
+      base_converter_venv\Scripts\activate
+      ```
+    - **Linux**:
+      ```sh
+      python3 -m venv base_converter_venv
+      source base_converter_venv/bin/activate
+      ```
+
+3. Install the dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+
+4. Run the application:
+    - **Windows**:
+      ```sh
+      python src\base_converter.py
+      ```
+    - **Linux**:
+      ```sh
+      python src/base_converter.py
+      ```
+
+## Usage
+Use the input field to enter either an integer, binary, or hexadecimal number and choose the appropriate type from the combo box. Upon clicking convert, the number will be displayed as all three options in the labeled output areas.
+
+You can enter multiple numbers by using a "." as a separator. For example, an IP address entered as an integer: `192.168.1.1`, will be displayed as binary: `11000000.10101000.1.1`, and hexadecimal: `C0.A8.1.1`.
+
+## Development
+### Using PyQt Designer
+The `pyqt_gui.ui` file can be opened and edited with PyQt Designer. PyQt Designer is a tool for designing and building GUIs from Qt widgets graphically and is included in pyqt5-tools==5.15.9.3.3.
+
+To open PyQt Designer from the cloned GitHub repository:
+- **Windows**:
+  Navigate to the `Scripts` folder of your virtual environment or Python installation and run `designer.exe`.
+  ```sh
+  base_converter_venv\Scripts\qt5-tools.exe designer
+  ```
+
+- **Linux**:  
+  ```sh
+  .base_converter_venv/lib/python3.11/site-packages/qt5_applications/Qt/bin/designer
+  ```
+
+### Converting `.ui` to `.py`
+Project files in PyQt Designer are saved as `.ui`. To convert the `.ui` file to a `.py` file, use the following command:
+```sh
+pyuic5 -o src/pyqt_gui.py src/pyqt_gui.ui
+```
+
+### Building Executables with PyInstaller
+To build executables for Windows, macOS, and Linux, you can use PyInstaller. I recommend using PyInstaller version 6.1.0 as it is stable and does not flag the executable as a virus. First, ensure you have PyInstaller installed:
+```sh
+pip install pyinstaller==6.1.0
+```
+Then, run the following command to create an executable:
+```sh
+pyinstaller --onefile --noconsole src/base_converter.py
+```
+This will generate the executable in the `dist` directory. It will also create a `build` directory and `.spec` file. These are used in the build process and can be safely deleted.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
+
+## Source Code
+The source code for this project can be found in the GitHub repository: [https://github.com/LukeWait/base-converter](https://github.com/LukeWait/base-converter).
+
+## Dependencies
+For those building from source, the dependencies listed in `requirements.txt` are:
+- PyQt5==5.15.9
+- pyqt5-tools==5.15.9.3.3
