@@ -23,8 +23,8 @@ A Python-based GUI tool for converting numbers between different bases.
 2. Extract the contents to a desired location.
 3. Run the `BaseConverter.exe` file.
 
-#### Linux
-Due to size constraints, a Linux executable is not included in the releases. Please follow the instructions below to run the application from source.
+#### Linux/macOS
+Due to size constraints, Linux/macOS executables are not included in the releases. Please follow the instructions below to run the application from source or the [Development](#development) section for details on building with PyInstaller.
 
 ### From Source
 To install and run the application from source:
