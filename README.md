@@ -16,9 +16,23 @@ A Python-based GUI tool for converting numbers between different bases.
 - [Dependencies](#dependencies)
 
 ## Installation
-
 ### Executable
-Due to size constraints I have not included executables under Releases. Please follow the instructions below to run the application from source or check the [Development](#development) section for details on building with PyInstaller.
+#### Windows
+1. Download the `base_converter_win_v2_0_1.zip` from the [releases page](https://github.com/LukeWait/base-converter/releases).
+2. Extract the contents to a desired location.
+3. Run the `BaseConverter.exe` file.
+
+#### Linux
+1. Download the `base_converter_linux_v2_0_1.zip` from the [releases page](https://github.com/LukeWait/base-converter/releases).
+2. Extract the contents to a desired location.
+3. Make the BaseConverter file executable by running the following command in the terminal:
+    ```sh
+    chmod +x BaseConverter
+    ```
+4. Run the BaseConverter file by navigating to the directory in the terminal and executing:
+    ```sh
+    ./BaseConverter
+    ```
 
 ### From Source
 To install and run the application from source:
