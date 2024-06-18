@@ -9,8 +9,8 @@ Date: July 25, 2023
 License: MIT License
 
 Dependencies (requirements.txt):
-PyQt5==5.15.6
-pyqt5-tools==5.15.4.3.2
+PyQt5==5.15.9
+pyqt5-tools==5.15.9.3.3
 
 GitHub Repository: https://github.com/LukeWait/base-converter
 
