@@ -18,13 +18,7 @@ A Python-based GUI tool for converting numbers between different bases.
 ## Installation
 
 ### Executable
-#### Windows
-1. Download the `base_converter_win_v1_0_0.zip` from the [releases page](https://github.com/LukeWait/base-converter/releases).
-2. Extract the contents to a desired location.
-3. Run the `BaseConverter.exe` file.
-
-#### Linux/macOS
-Due to size constraints, Linux/macOS executables are not included in the releases. Please follow the instructions below to run the application from source or the [Development](#development) section for details on building with PyInstaller.
+Due to size constraints I have not included executables under Releases. Please follow the instructions below to run the application from source or check the [Development](#development) section for details on building with PyInstaller.
 
 ### From Source
 To install and run the application from source:
@@ -90,7 +84,7 @@ pyuic5 -o src/pyqt_gui.py src/pyqt_gui.ui
 ```
 
 ### Building Executables with PyInstaller
-To build executables for Windows, macOS, and Linux, you can use PyInstaller. I recommend using PyInstaller version 6.1.0 as it is stable and does not flag the executable as a virus. First, ensure you have PyInstaller installed:
+To build executables for Windows, macOS, and Linux, you can use PyInstaller. I recommend using PyInstaller version 6.1.0 as it is stable and doesn't result in the executable being flagged as a virus like some newer versions. First, ensure you have PyInstaller installed:
 ```sh
 pip install pyinstaller==6.1.0
 ```
@@ -98,7 +92,7 @@ Then, run the following command to create an executable:
 ```sh
 pyinstaller --onefile --noconsole src/base_converter.py
 ```
-This will generate the executable in the `dist` directory. It will also create a `build` directory and `.spec` file. These are used in the build process and can be safely deleted.
+This will generate the executable in the `dist` directory. It will also create a `build` directory and `.spec` file. These are used in the build process and can be safely removed.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.
