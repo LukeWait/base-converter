@@ -18,12 +18,12 @@ A Python-based GUI tool for converting numbers between different bases.
 ## Installation
 ### Executable
 #### Windows
-1. Download the `base_converter_win_v2_0_1.zip` from the [releases page](https://github.com/LukeWait/base-converter/releases).
+1. Download the latest Windows release from the [releases page](https://github.com/LukeWait/base-converter/releases).
 2. Extract the contents to a desired location.
 3. Run the `BaseConverter.exe` file.
 
 #### Linux
-1. Download the `base_converter_linux_v2_0_1.zip` from the [releases page](https://github.com/LukeWait/base-converter/releases).
+1. Download the latest Linux release from the [releases page](https://github.com/LukeWait/base-converter/releases).
 2. Extract the contents to a desired location.
 3. Make the BaseConverter file executable by running the following command in the terminal:
     ```sh
