@@ -4,7 +4,9 @@ Project: GUI Base Converter Tool
 Description: A Python-based tool for converting numbers between different bases with a PyQt GUI.
              This tool supports conversion between integers, binary, and hexadecimal formats.
 Version: 1.0.0
-Author: Luke Wait
+Author: ┬  ┬ ┬┬┌─┌─┐┬ ┬┌─┐╦╔╦╗
+        │  │ │├┴┐├┤ │││├─┤║ ║
+        ┴─┘└─┘┴ ┴└─┘└┴┘┴ ┴╩ ╩
 Date: July 25, 2023
 License: MIT License
 
